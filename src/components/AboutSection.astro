@@ -1,0 +1,28 @@
+---
+import type { SiteContent } from '../lib/content';
+
+interface Props {
+  about: SiteContent['about'];
+}
+
+const { about } = Astro.props;
+---
+
+<section class="section section-muted" id="about">
+  <div class="container about-grid">
+    <div class="section-heading section-heading-left">
+      <span class="eyebrow">{about.kicker}</span>
+      <h2>{about.title}</h2>
+      <p>{about.description}</p>
+    </div>
+
+    <div class="cards-grid">
+      {about.values.map((value) => (
+        <article class="card">
+          <h3>{value.title}</h3>
+          <p>{value.description}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

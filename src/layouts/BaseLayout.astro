@@ -1,0 +1,73 @@
+---
+import '../styles/global.css';
+
+interface SeoProps {
+  title: string;
+  description: string;
+  keywords: string[];
+  ogTitle: string;
+  ogDescription: string;
+}
+
+interface Props {
+  locale: 'es' | 'en';
+  seo: SeoProps;
+  pagePath: '/' | '/en/';
+}
+
+const { locale, seo, pagePath } = Astro.props;
+const site = Astro.site ?? new URL('https://j2osolutions.github.io');
+const siteBase = new URL(import.meta.env.BASE_URL, site);
+
+const toAbsoluteUrl = (path: string) => new URL(path.replace(/^\//, ''), siteBase).toString();
+const canonicalUrl = toAbsoluteUrl(pagePath);
+const spanishUrl = toAbsoluteUrl('/');
+const englishUrl = toAbsoluteUrl('/en/');
+const ogImage = toAbsoluteUrl('/J2O.png');
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'J2O Solutions',
+  url: siteBase.toString(),
+  logo: ogImage,
+  email: 'comercial@j2osolutions.com',
+  sameAs: ['https://github.com/j2osolutions'],
+  description: seo.description,
+};
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="color-scheme" content="light" />
+    <title>{seo.title}</title>
+    <meta name="description" content={seo.description} />
+    <meta name="keywords" content={seo.keywords.join(', ')} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="es" href={spanishUrl} />
+    <link rel="alternate" hreflang="en" href={englishUrl} />
+    <link rel="alternate" hreflang="x-default" href={spanishUrl} />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+    <link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="J2O Solutions" />
+    <meta property="og:locale" content={locale === 'es' ? 'es_ES' : 'en_US'} />
+    <meta property="og:title" content={seo.ogTitle} />
+    <meta property="og:description" content={seo.ogDescription} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={seo.ogTitle} />
+    <meta name="twitter:description" content={seo.ogDescription} />
+    <meta name="twitter:image" content={ogImage} />
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

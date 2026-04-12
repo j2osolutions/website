@@ -1,0 +1,243 @@
+{
+  "seo": {
+    "title": "J2O Solutions | Desarrollo a medida, APIs, RFID y sistemas geoespaciales",
+    "description": "J2O Solutions desarrolla aplicaciones web y mobile a medida, APIs, soluciones RFID y logisticas con Zebra, impresion ZPL, escaneo de etiquetas y sistemas geoespaciales.",
+    "keywords": [
+      "J2O Solutions",
+      "desarrollo a medida",
+      "aplicaciones web",
+      "API",
+      "mobile",
+      "RFID",
+      "Zebra",
+      "ZPL",
+      "sistemas geoespaciales",
+      "logistica"
+    ],
+    "ogTitle": "J2O Solutions | Expertos en desarrollo a medida e integraciones tecnicas",
+    "ogDescription": "Construimos aplicaciones, APIs y soluciones operativas para entornos exigentes, incluyendo RFID, Zebra, ZPL y sistemas geoespaciales."
+  },
+  "nav": {
+    "tagline": "Ingenieria de software a medida para operaciones reales",
+    "ariaLabel": "Navegacion principal",
+    "links": [
+      { "href": "#services", "label": "Capacidades" },
+      { "href": "#process", "label": "Enfoque" },
+      { "href": "#benefits", "label": "Valor" },
+      { "href": "#tech", "label": "Especialidades" },
+      { "href": "#about", "label": "J2O" }
+    ],
+    "cta": {
+      "href": "#contact",
+      "label": "Hablar con J2O"
+    }
+  },
+  "hero": {
+    "eyebrow": "J2O Solutions",
+    "title": "Software a medida para operaciones complejas.",
+    "description": "Diseñamos y desarrollamos soluciones de software para operaciones complejas: aplicaciones web y mobile, APIs, plataformas logisticas, integraciones con equipos Zebra para impresion y escaneo ZPL, y sistemas geoespaciales orientados a negocio.",
+    "primaryCta": {
+      "href": "#contact",
+      "label": "Solicitar una conversacion"
+    },
+    "secondaryCta": {
+      "href": "#services",
+      "label": "Ver capacidades tecnicas"
+    },
+    "trustBadge": "Ingenieria aplicada a operaciones, integracion y escalabilidad",
+    "supportingText": "Nuestro valor diferencial no es solo construir una interfaz. Resolvemos procesos, conectamos sistemas y desarrollamos software que soporta escenarios operativos reales.",
+    "stats": [
+      { "label": "Aplicaciones", "value": "Web y mobile" },
+      { "label": "Integracion", "value": "APIs y servicios" },
+      { "label": "Operacion", "value": "RFID y Zebra" },
+      { "label": "Especialidad", "value": "Geo y logistica" }
+    ],
+    "lottieTitle": "Animacion abstracta de lineas conectadas",
+    "surfaceLabel": "Lo que resolvemos",
+    "surfaceTitle": "APIs, movilidad y trazabilidad.",
+    "surfacePoints": [
+      "Aplicaciones web y mobile a medida.",
+      "Zebra, RFID y flujos ZPL.",
+      "Geoespacial, logistica y control operativo."
+    ]
+  },
+  "services": {
+    "kicker": "Capacidades",
+    "title": "Capacidades tecnicas para proyectos a medida y entornos operativos exigentes",
+    "description": "Nos especializamos en soluciones donde la dificultad real esta en la logica, la integracion y la operacion, no solo en la capa visual.",
+    "items": [
+      {
+        "title": "Aplicaciones web y mobile a medida",
+        "description": "Desarrollo de productos internos y externos con arquitectura solida, experiencia clara y una base lista para crecer.",
+        "points": [
+          "Flujos operativos y modulos de negocio",
+          "Experiencias web y movilidad conectadas",
+          "Mantenibilidad y evolucion del producto"
+        ]
+      },
+      {
+        "title": "APIs e integraciones empresariales",
+        "description": "Diseño e implementacion de servicios, integraciones y conectores para que los sistemas hablen entre si con estabilidad.",
+        "points": [
+          "Integracion con servicios internos y externos",
+          "Automatizacion de flujos y sincronizacion de datos",
+          "Arquitecturas modulares y seguras"
+        ]
+      },
+      {
+        "title": "RFID, Zebra, ZPL y geoespacial",
+        "description": "Soluciones especializadas para trazabilidad, logistica, movilidad en campo y operaciones con datos territoriales.",
+        "points": [
+          "Impresion y lectura de etiquetas con equipos Zebra",
+          "Procesos logisticos, inventario y trazabilidad",
+          "Mapas, ubicacion, capas y analitica geoespacial"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Enfoque",
+    "title": "Analisis tecnico serio antes de construir",
+    "description": "Abordamos cada proyecto desde la comprension profunda del proceso operativo, las integraciones necesarias y las restricciones del entorno real.",
+    "lottieTitle": "Animacion de red y transformacion",
+    "noteLabel": "Metodo",
+    "note": "Diseñamos soluciones que pueden convivir con hardware, servicios externos, procesos logisticos y requisitos de campo sin perder orden tecnico.",
+    "steps": [
+      {
+        "title": "Levantamiento tecnico y operativo",
+        "description": "Entendemos procesos, actores, dispositivos, fuentes de datos, restricciones y objetivos antes de definir la solucion."
+      },
+      {
+        "title": "Arquitectura e integracion",
+        "description": "Definimos modulos, APIs, flujos, integraciones, movilidad, capas logisticas o geoespaciales segun el caso."
+      },
+      {
+        "title": "Desarrollo con foco en fiabilidad",
+        "description": "Construimos software robusto, mantenible y preparado para escenarios de uso exigentes."
+      },
+      {
+        "title": "Puesta en operacion y evolucion",
+        "description": "Entregamos una base lista para crecer, integrarse mejor y sostener nuevas necesidades del negocio."
+      }
+    ]
+  },
+  "benefits": {
+    "kicker": "Valor",
+    "title": "Lo que aportamos cuando el problema es tecnico y operativo de verdad",
+    "description": "Nuestro enfoque ayuda a transformar procesos dispersos en soluciones integradas, medibles y sostenibles.",
+    "items": [
+      {
+        "title": "Menos friccion entre sistemas",
+        "description": "Diseñamos integraciones y APIs para evitar reprocesos, duplicidad de datos y puntos ciegos operativos."
+      },
+      {
+        "title": "Mayor control operativo",
+        "description": "Las soluciones RFID, Zebra, ZPL y geoespaciales mejoran trazabilidad, seguimiento y precision en campo."
+      },
+      {
+        "title": "Software alineado al negocio",
+        "description": "El desarrollo a medida permite adaptar la tecnologia al proceso, no forzar el proceso a una herramienta generica."
+      },
+      {
+        "title": "Base lista para escalar",
+        "description": "Dejamos una arquitectura preparada para crecer con nuevos modulos, canales, dispositivos o integraciones."
+      }
+    ]
+  },
+  "tech": {
+    "kicker": "Especialidades",
+    "title": "Expertise tecnico aplicado",
+    "description": "Trabajamos con stacks modernos, pero lo importante es como los usamos para resolver integracion, movilidad, trazabilidad y operacion.",
+    "items": [
+      "Aplicaciones web a medida",
+      "Desarrollo mobile",
+      "APIs y microservicios",
+      "Integraciones empresariales",
+      "RFID",
+      "Zebra devices",
+      "Impresion ZPL",
+      "Escaneo de etiquetas",
+      "Sistemas geoespaciales",
+      "Logistica y trazabilidad",
+      "Arquitectura modular"
+    ]
+  },
+  "about": {
+    "kicker": "J2O",
+    "title": "J2O Solutions es una firma tecnica orientada a resolver software de negocio a medida",
+    "description": "Nos especializamos en proyectos donde hace falta comprender la operacion, integrar sistemas, trabajar con dispositivos y construir herramientas utiles que realmente soporten el negocio.",
+    "values": [
+      {
+        "title": "Profundidad tecnica",
+        "description": "Entendemos arquitectura, integracion, movilidad, trazabilidad y escenarios operativos complejos."
+      },
+      {
+        "title": "Soluciones hechas para operar",
+        "description": "Construimos software para uso real en procesos logisticos, plataformas empresariales y entornos distribuidos."
+      },
+      {
+        "title": "Integracion con hardware y procesos",
+        "description": "Integramos software con dispositivos, escaneres QR y de codigo de barras, sensores, mensajeria MQTT y soluciones IoT orientadas a la operacion."
+      },
+      {
+        "title": "Evolucion sostenible",
+        "description": "Diseñamos una base que permita ampliar funcionalidades sin desordenar la arquitectura."
+      }
+    ]
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Preguntas frecuentes",
+    "description": "Respuestas directas para facilitar una primera conversacion.",
+    "items": [
+      {
+        "question": "¿El foco de J2O es marketing web o desarrollo a medida?",
+        "answer": "Nuestro foco principal es el desarrollo a medida: aplicaciones web y mobile, APIs, integraciones, soluciones RFID y logisticas, y sistemas geoespaciales. Sitios estaticos y landing pages tambien forman parte de nuestras capacidades, pero no son el centro de nuestra propuesta."
+      },
+      {
+        "question": "¿Podeis integrar equipos Zebra, impresoras o procesos con etiquetas ZPL?",
+        "answer": "Si. Podemos desarrollar soluciones que incluyan impresion de etiquetas ZPL, lectura y escaneo, flujos logisticos y procesos apoyados en equipos Zebra."
+      },
+      {
+        "question": "¿Trabajais APIs y sistemas conectados con otras plataformas?",
+        "answer": "Si. Diseñamos e implementamos APIs, integraciones y servicios para conectar plataformas, dispositivos, aplicaciones y procesos de negocio."
+      },
+      {
+        "question": "¿Tambien podeis desarrollar sistemas geoespaciales o soluciones con mapas?",
+        "answer": "Si. Podemos trabajar con ubicacion, visualizacion territorial, trazabilidad, capas de datos y funcionalidades geoespaciales segun las necesidades del proyecto."
+      }
+    ]
+  },
+  "cta": {
+    "kicker": "Siguiente paso",
+    "title": "Si necesitas una solucion tecnica a medida, podemos ayudarte a diseñarla, integrarla y ponerla en operacion.",
+    "description": "Trabajamos proyectos donde software, procesos, dispositivos e integraciones deben convivir con orden tecnico y orientacion a negocio.",
+    "primaryCta": {
+      "href": "#contact",
+      "label": "Iniciar conversacion"
+    },
+    "secondaryCta": {
+      "href": "#process",
+      "label": "Ver enfoque tecnico"
+    }
+  },
+  "contact": {
+    "kicker": "Contacto",
+    "title": "Si necesitas una solucion tecnica a medida, hablemos.",
+    "description": "Si estas evaluando una aplicacion a medida, una API, una solucion mobile, integracion con dispositivos o una plataforma geoespacial, podemos ayudarte a definir el siguiente paso con criterio tecnico.",
+    "primaryCtaLabel": "Iniciar conversacion",
+    "emailLabel": "Correo",
+    "email": "comercial@j2osolutions.com",
+    "responseLabel": "Tiempo de respuesta",
+    "responseTime": "1 dia habil",
+    "deliveryLabel": "Modalidad de trabajo",
+    "delivery": "Remoto y colaborativo",
+    "coverageLabel": "Cobertura",
+    "coverage": "Proyectos nacionales e internacionales"
+  },
+  "footer": {
+    "tagline": "Software a medida para integracion, operacion, movilidad y trazabilidad.",
+    "email": "comercial@j2osolutions.com",
+    "rights": "© 2026 J2O Solutions. Todos los derechos reservados."
+  }
+}

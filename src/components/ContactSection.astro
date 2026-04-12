@@ -1,0 +1,41 @@
+---
+import type { SiteContent } from '../lib/content';
+
+interface Props {
+  contact: SiteContent['contact'];
+}
+
+const { contact } = Astro.props;
+---
+
+<section class="section section-soft" id="contact">
+  <div class="container contact-grid">
+    <div class="section-heading section-heading-left">
+      <span class="eyebrow">{contact.kicker}</span>
+      <h2>{contact.title}</h2>
+      <p>{contact.description}</p>
+      <div class="button-row">
+        <a class="button button-primary" href={`mailto:${contact.email}`}>{contact.primaryCtaLabel}</a>
+      </div>
+    </div>
+
+    <div class="contact-card card">
+      <div class="contact-item">
+        <span>{contact.emailLabel}</span>
+        <a href={`mailto:${contact.email}`}>{contact.email}</a>
+      </div>
+      <div class="contact-item">
+        <span>{contact.responseLabel}</span>
+        <strong>{contact.responseTime}</strong>
+      </div>
+      <div class="contact-item">
+        <span>{contact.deliveryLabel}</span>
+        <strong>{contact.delivery}</strong>
+      </div>
+      <div class="contact-item">
+        <span>{contact.coverageLabel}</span>
+        <strong>{contact.coverage}</strong>
+      </div>
+    </div>
+  </div>
+</section>

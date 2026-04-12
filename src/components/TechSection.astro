@@ -1,0 +1,25 @@
+---
+import type { SiteContent } from '../lib/content';
+
+interface Props {
+  tech: SiteContent['tech'];
+}
+
+const { tech } = Astro.props;
+---
+
+<section class="section" id="tech">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">{tech.kicker}</span>
+      <h2>{tech.title}</h2>
+      <p>{tech.description}</p>
+    </div>
+
+    <div class="tech-stack">
+      {tech.items.map((item) => (
+        <span class="tech-pill">{item}</span>
+      ))}
+    </div>
+  </div>
+</section>

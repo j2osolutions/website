@@ -1,0 +1,11 @@
+---
+import LandingPage from '../../components/LandingPage.astro';
+import { getContent } from '../../lib/content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const content = getContent('en');
+---
+
+<BaseLayout locale="en" seo={content.seo} pagePath="/en/">
+  <LandingPage locale="en" content={content} />
+</BaseLayout>

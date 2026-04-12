@@ -1,0 +1,45 @@
+---
+import type { SiteContent } from '../lib/content';
+
+interface Props {
+  hero: SiteContent['hero'];
+}
+
+const { hero } = Astro.props;
+---
+
+<section class="hero section" id="top">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">{hero.eyebrow}</span>
+      <h1>{hero.title}</h1>
+
+      <div class="button-row">
+        <a class="button button-primary" href={hero.primaryCta.href}>{hero.primaryCta.label}</a>
+        <a class="button button-secondary" href={hero.secondaryCta.href}>{hero.secondaryCta.label}</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-panel">
+        <div class="hero-orb hero-orb-one"></div>
+        <div class="hero-orb hero-orb-two"></div>
+        <div class="hero-image-frame">
+          <img
+            class="hero-image"
+            src={`${import.meta.env.BASE_URL}team-2.jpg`}
+            alt={hero.lottieTitle}
+            width="1024"
+            height="1024"
+            loading="eager"
+          />
+        </div>
+        <div class="hero-surface">
+          <span class="surface-label">{hero.surfaceLabel}</span>
+          <h2>{hero.surfaceTitle}</h2>
+          <p class="hero-surface-description">{hero.description}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

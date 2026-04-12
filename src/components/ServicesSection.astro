@@ -1,0 +1,34 @@
+---
+import type { SiteContent } from '../lib/content';
+
+interface Props {
+  services: SiteContent['services'];
+}
+
+const { services } = Astro.props;
+---
+
+<section class="section section-muted" id="services">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">{services.kicker}</span>
+      <h2>{services.title}</h2>
+      <p>{services.description}</p>
+    </div>
+
+    <div class="cards-grid cards-grid-services">
+      {services.items.map((service) => (
+        <article class="card">
+          <span class="card-accent"></span>
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+          <ul class="feature-list">
+            {service.points.map((point) => (
+              <li>{point}</li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

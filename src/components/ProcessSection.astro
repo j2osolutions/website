@@ -1,0 +1,42 @@
+---
+import type { SiteContent } from '../lib/content';
+import LottiePlayer from './LottiePlayer.astro';
+
+interface Props {
+  process: SiteContent['process'];
+}
+
+const { process } = Astro.props;
+---
+
+<section class="section" id="process">
+  <div class="container process-grid">
+    <div class="process-copy">
+      <div class="section-heading section-heading-left">
+        <span class="eyebrow">{process.kicker}</span>
+        <h2>{process.title}</h2>
+        <p>{process.description}</p>
+      </div>
+
+      <div class="timeline">
+        {process.steps.map((step, index) => (
+          <article class="timeline-item">
+            <span class="timeline-index">{index + 1}</span>
+            <div>
+              <h3>{step.title}</h3>
+              <p>{step.description}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+
+    <div class="process-visual card">
+      <LottiePlayer src={`${import.meta.env.BASE_URL}lottie/process-network.json`} title={process.lottieTitle} className="process-lottie" />
+      <div class="process-note">
+        <span class="surface-label">{process.noteLabel}</span>
+        <p>{process.note}</p>
+      </div>
+    </div>
+  </div>
+</section>

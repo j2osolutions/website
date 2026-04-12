@@ -1,0 +1,31 @@
+---
+import type { Locale, SiteContent } from '../lib/content';
+import AboutSection from './AboutSection.astro';
+import BenefitsSection from './BenefitsSection.astro';
+import ContactSection from './ContactSection.astro';
+import HeroSection from './HeroSection.astro';
+import ProcessSection from './ProcessSection.astro';
+import ServicesSection from './ServicesSection.astro';
+import SiteFooter from './SiteFooter.astro';
+import SiteHeader from './SiteHeader.astro';
+import TechSection from './TechSection.astro';
+
+interface Props {
+  locale: Locale;
+  content: SiteContent;
+}
+
+const { locale, content } = Astro.props;
+---
+
+<SiteHeader locale={locale} nav={content.nav} />
+<main>
+  <HeroSection hero={content.hero} />
+  <ServicesSection services={content.services} />
+  <ProcessSection process={content.process} />
+  <BenefitsSection benefits={content.benefits} />
+  <TechSection tech={content.tech} />
+  <AboutSection about={content.about} />
+  <ContactSection contact={content.contact} />
+</main>
+<SiteFooter locale={locale} footer={content.footer} />
