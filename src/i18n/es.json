@@ -18,7 +18,7 @@
     "ogDescription": "Construimos aplicaciones, APIs y soluciones operativas para entornos exigentes, incluyendo RFID, Zebra, ZPL y sistemas geoespaciales."
   },
   "nav": {
-    "tagline": "Ingenieria de software a medida para operaciones reales",
+    "tagline": "Ingenieria de software a la medida para operaciones reales",
     "ariaLabel": "Navegacion principal",
     "links": [
       { "href": "#services", "label": "Capacidades" },
@@ -34,7 +34,7 @@
   },
   "hero": {
     "eyebrow": "J2O Solutions",
-    "title": "Software a medida para operaciones complejas.",
+    "title": "Software a la medida para operaciones complejas.",
     "description": "Diseñamos y desarrollamos soluciones de software para operaciones complejas: aplicaciones web y mobile, APIs, plataformas logisticas, integraciones con equipos Zebra para impresion y escaneo ZPL, y sistemas geoespaciales orientados a negocio.",
     "primaryCta": {
       "href": "#contact",
@@ -236,7 +236,7 @@
     "coverage": "Proyectos nacionales e internacionales"
   },
   "footer": {
-    "tagline": "Software a medida para integracion, operacion, movilidad y trazabilidad.",
+    "tagline": "Software a la medida para integracion, operacion, movilidad y trazabilidad.",
     "email": "comercial@j2osolutions.com",
     "rights": "© 2026 J2O Solutions. Todos los derechos reservados."
   }
