@@ -4,8 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://j2osolutions.github.io',
-  base: '/website',
+  site: 'https://j2osolutions.com',
   trailingSlash: 'always',
   integrations: [sitemap()],
 });

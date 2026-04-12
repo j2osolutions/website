@@ -16,7 +16,7 @@ interface Props {
 }
 
 const { locale, seo, pagePath } = Astro.props;
-const site = Astro.site ?? new URL('https://j2osolutions.github.io');
+const site = Astro.site ?? new URL('https://j2osolutions.com');
 const siteBase = new URL(import.meta.env.BASE_URL, site);
 
 const toAbsoluteUrl = (path: string) => new URL(path.replace(/^\//, ''), siteBase).toString();
