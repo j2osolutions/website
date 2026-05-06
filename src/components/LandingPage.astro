@@ -2,6 +2,7 @@
 import type { Locale, SiteContent } from '../lib/content';
 import AboutSection from './AboutSection.astro';
 import BenefitsSection from './BenefitsSection.astro';
+import CargoProductSection from './CargoProductSection.astro';
 import ContactSection from './ContactSection.astro';
 import HeroSection from './HeroSection.astro';
 import ProcessSection from './ProcessSection.astro';
@@ -21,6 +22,7 @@ const { locale, content } = Astro.props;
 <SiteHeader locale={locale} nav={content.nav} />
 <main>
   <HeroSection hero={content.hero} />
+  <CargoProductSection cargoProduct={content.cargoProduct} />
   <ServicesSection services={content.services} />
   <ProcessSection process={content.process} />
   <BenefitsSection benefits={content.benefits} />

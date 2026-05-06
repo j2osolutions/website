@@ -21,6 +21,7 @@
     "tagline": "Custom software engineering for real-world operations",
     "ariaLabel": "Main navigation",
     "links": [
+      { "href": "#cargo", "label": "Flagship product" },
       { "href": "#services", "label": "Capabilities" },
       { "href": "#process", "label": "Approach" },
       { "href": "#benefits", "label": "Value" },
@@ -35,7 +36,7 @@
   "hero": {
     "eyebrow": "J2O Solutions",
     "title": "Custom software for complex operations.",
-    "description": "We design and build software for complex operations: custom web and mobile applications, APIs, logistics platforms, Zebra-based printing and scanning workflows with ZPL labels, and geospatial systems built around business needs.",
+    "description": "We design and build software for complex operations: custom web and mobile applications, APIs, logistics platforms, Zebra-based printing and scanning workflows with ZPL labels, RFID, NFC, QR and geospatial systems built around business needs.",
     "primaryCta": {
       "href": "#contact",
       "label": "Start a conversation"
@@ -43,6 +44,11 @@
     "secondaryCta": {
       "href": "#services",
       "label": "See technical capabilities"
+    },
+    "featuredProduct": {
+      "label": "Flagship catalog:",
+      "text": "Discover Cargo and its end-to-end air traceability model",
+      "href": "#cargo"
     },
     "trustBadge": "Engineering applied to operations, integration and scale",
     "supportingText": "Our value is not limited to building interfaces. We solve processes, connect systems and deliver software that supports real operational scenarios.",
@@ -57,8 +63,47 @@
     "surfaceTitle": "APIs, mobility and traceability.",
     "surfacePoints": [
       "Custom web and mobile applications.",
-      "Zebra, RFID and ZPL workflows.",
+      "Zebra, RFID, NFC, QR and ZPL workflows.",
       "Geospatial, logistics and operational control."
+    ]
+  },
+  "cargoProduct": {
+    "kicker": "Flagship product",
+    "title": "Cargo: digital platform for end-to-end air cargo traceability",
+    "description": "Cargo centralizes events, integrations and operational evidence so every logistics stakeholder gets actionable visibility in near real time.",
+    "tagline": "J2O flagship offer",
+    "heroTitle": "Digitize your air cargo chain from warehouse to ramp.",
+    "heroDescription": "Cargo transforms fragmented email, spreadsheet and chat workflows into an event-driven operation with a control tower, shipment versioning and verifiable traceability.",
+    "primaryCta": {
+      "href": "mailto:comercial@j2osolutions.com?subject=I%20want%20to%20learn%20about%20Cargo",
+      "label": "Request a Cargo demo"
+    },
+    "secondaryCta": {
+      "href": "#contact",
+      "label": "Talk to a specialist"
+    },
+    "metrics": [
+      { "label": "Visibility", "value": "End-to-end milestone tracking" },
+      { "label": "Integration", "value": "WMS, TMS, terminal and carrier" },
+      { "label": "Operations", "value": "Orchestrated RFID, QR and NFC" }
+    ],
+    "pillarsTitle": "What makes Cargo different",
+    "pillars": [
+      "Control Tower with shipment timeline and exception alerting.",
+      "Standardized data model aligned with ONE Record and Cargo iQ milestones.",
+      "Auditable versioning for cubicage, flight or carrier changes without losing context."
+    ],
+    "outcomesTitle": "Operational outcomes",
+    "outcomes": [
+      "Reduces terminal and ramp blind spots with near-real-time operational evidence.",
+      "Cuts rework caused by misalignment across stakeholders and legacy systems.",
+      "Improves final customer confidence through reliable ETAs and status updates."
+    ],
+    "fitTitle": "Built for organizations that need to",
+    "fit": [
+      "Scale air exports without losing operational control.",
+      "Orchestrate multiple actors without manual follow-up.",
+      "Build a modern traceability foundation ready to grow."
     ]
   },
   "services": {
@@ -154,6 +199,8 @@
       "APIs and microservices",
       "Enterprise integrations",
       "RFID",
+      "NFC",
+      "QR",
       "Zebra devices",
       "ZPL printing",
       "Label scanning",

@@ -21,6 +21,7 @@
     "tagline": "Ingenieria de software a la medida para operaciones reales",
     "ariaLabel": "Navegacion principal",
     "links": [
+      { "href": "#cargo", "label": "Producto estrella" },
       { "href": "#services", "label": "Capacidades" },
       { "href": "#process", "label": "Enfoque" },
       { "href": "#benefits", "label": "Valor" },
@@ -35,7 +36,7 @@
   "hero": {
     "eyebrow": "J2O Solutions",
     "title": "Software a la medida para operaciones complejas.",
-    "description": "Diseñamos y desarrollamos soluciones de software para operaciones complejas: aplicaciones web y mobile, APIs, plataformas logisticas, integraciones con equipos Zebra para impresion y escaneo ZPL, y sistemas geoespaciales orientados a negocio.",
+    "description": "Diseñamos y desarrollamos soluciones de software para operaciones complejas: aplicaciones web y mobile, APIs, plataformas logisticas, integraciones con equipos Zebra para impresion y escaneo ZPL, RFID, NFC, QR y sistemas geoespaciales orientados a negocio.",
     "primaryCta": {
       "href": "#contact",
       "label": "Solicitar una conversacion"
@@ -43,6 +44,11 @@
     "secondaryCta": {
       "href": "#services",
       "label": "Ver capacidades tecnicas"
+    },
+    "featuredProduct": {
+      "label": "Catalogo estrella:",
+      "text": "Conoce Cargo y su modelo end-to-end para trazabilidad aerea",
+      "href": "#cargo"
     },
     "trustBadge": "Ingenieria aplicada a operaciones, integracion y escalabilidad",
     "supportingText": "Nuestro valor diferencial no es solo construir una interfaz. Resolvemos procesos, conectamos sistemas y desarrollamos software que soporta escenarios operativos reales.",
@@ -57,8 +63,47 @@
     "surfaceTitle": "APIs, movilidad y trazabilidad.",
     "surfacePoints": [
       "Aplicaciones web y mobile a medida.",
-      "Zebra, RFID y flujos ZPL.",
+      "Zebra, RFID, NFC, QR y flujos ZPL.",
       "Geoespacial, logistica y control operativo."
+    ]
+  },
+  "cargoProduct": {
+    "kicker": "Producto estrella",
+    "title": "Cargo: plataforma digital para trazabilidad aerea end-to-end",
+    "description": "Cargo centraliza eventos, integraciones y evidencia operativa para que cada actor del ecosistema logistico tenga visibilidad accionable en tiempo real.",
+    "tagline": "Catalogo principal J2O",
+    "heroTitle": "Digitaliza tu cadena de carga aerea desde bodega hasta rampa.",
+    "heroDescription": "Con Cargo pasas de procesos fragmentados en correo, Excel y WhatsApp a una operacion event-driven con control tower, versionamiento de envios y trazabilidad verificable.",
+    "primaryCta": {
+      "href": "mailto:comercial@j2osolutions.com?subject=Quiero%20conocer%20Cargo",
+      "label": "Solicitar demo de Cargo"
+    },
+    "secondaryCta": {
+      "href": "#contact",
+      "label": "Hablar con un especialista"
+    },
+    "metrics": [
+      { "label": "Visibilidad", "value": "End-to-end por hitos" },
+      { "label": "Integracion", "value": "WMS, TMS, terminal y aerolinea" },
+      { "label": "Operacion", "value": "RFID, QR y NFC orquestados" }
+    ],
+    "pillarsTitle": "Lo que hace diferente a Cargo",
+    "pillars": [
+      "Control Tower con linea de tiempo del shipment y alertas de excepcion.",
+      "Modelo de datos estandarizado alineado con ONE Record y eventos Cargo iQ.",
+      "Versionamiento auditable para cambios de cubicaje, vuelo o aerolinea sin perder contexto."
+    ],
+    "outcomesTitle": "Resultados que genera en operaciones",
+    "outcomes": [
+      "Reduce puntos ciegos en terminal y rampa con evidencia operativa en tiempo casi real.",
+      "Disminuye reprocesos por desalineacion entre actores y sistemas legacy.",
+      "Mejora la confianza del cliente final con ETAs y estados consistentes."
+    ],
+    "fitTitle": "Ideal para organizaciones que necesitan",
+    "fit": [
+      "Escalar exportaciones aereas sin perder control operativo.",
+      "Orquestar múltiples actores sin depender de seguimiento manual.",
+      "Construir una base moderna de trazabilidad lista para crecer."
     ]
   },
   "services": {
@@ -154,6 +199,8 @@
       "APIs y microservicios",
       "Integraciones empresariales",
       "RFID",
+      "NFC",
+      "QR",
       "Zebra devices",
       "Impresion ZPL",
       "Escaneo de etiquetas",

@@ -13,6 +13,10 @@ const { hero } = Astro.props;
     <div class="hero-copy">
       <span class="eyebrow">{hero.eyebrow}</span>
       <h1>{hero.title}</h1>
+      <p class="hero-featured-product">
+        <span>{hero.featuredProduct.label}</span>
+        <a href={hero.featuredProduct.href}>{hero.featuredProduct.text}</a>
+      </p>
 
       <div class="button-row">
         <a class="button button-primary" href={hero.primaryCta.href}>{hero.primaryCta.label}</a>

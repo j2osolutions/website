@@ -1,0 +1,69 @@
+---
+import type { SiteContent } from '../lib/content';
+
+interface Props {
+  cargoProduct: SiteContent['cargoProduct'];
+}
+
+const { cargoProduct } = Astro.props;
+---
+
+<section class="section section-muted cargo-product" id="cargo">
+  <div class="container">
+    <div class="section-heading">
+      <span class="eyebrow">{cargoProduct.kicker}</span>
+      <h2>{cargoProduct.title}</h2>
+      <p>{cargoProduct.description}</p>
+    </div>
+
+    <article class="cargo-hero card">
+      <div class="cargo-hero-copy">
+        <p class="cargo-tagline">{cargoProduct.tagline}</p>
+        <h3>{cargoProduct.heroTitle}</h3>
+        <p>{cargoProduct.heroDescription}</p>
+        <div class="button-row">
+          <a class="button button-primary" href={cargoProduct.primaryCta.href}>{cargoProduct.primaryCta.label}</a>
+          <a class="button button-secondary" href={cargoProduct.secondaryCta.href}>{cargoProduct.secondaryCta.label}</a>
+        </div>
+      </div>
+
+      <div class="cargo-hero-metrics">
+        {cargoProduct.metrics.map((metric) => (
+          <div class="cargo-metric">
+            <dt>{metric.label}</dt>
+            <dd>{metric.value}</dd>
+          </div>
+        ))}
+      </div>
+    </article>
+
+    <div class="cargo-grid">
+      <article class="card">
+        <h3>{cargoProduct.pillarsTitle}</h3>
+        <ul class="feature-list">
+          {cargoProduct.pillars.map((pillar) => (
+            <li>{pillar}</li>
+          ))}
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>{cargoProduct.outcomesTitle}</h3>
+        <ul class="feature-list">
+          {cargoProduct.outcomes.map((outcome) => (
+            <li>{outcome}</li>
+          ))}
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>{cargoProduct.fitTitle}</h3>
+        <ul class="feature-list">
+          {cargoProduct.fit.map((item) => (
+            <li>{item}</li>
+          ))}
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
