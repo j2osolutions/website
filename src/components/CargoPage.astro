@@ -1,0 +1,21 @@
+---
+import type { Locale, SiteContent } from '../lib/content';
+import CargoProductSection from './CargoProductSection.astro';
+import ContactSection from './ContactSection.astro';
+import SiteFooter from './SiteFooter.astro';
+import SiteHeader from './SiteHeader.astro';
+
+interface Props {
+  locale: Locale;
+  content: SiteContent;
+}
+
+const { locale, content } = Astro.props;
+---
+
+<SiteHeader locale={locale} nav={content.nav} />
+<main>
+  <CargoProductSection cargoProduct={content.cargoProduct} />
+  <ContactSection contact={content.contact} />
+</main>
+<SiteFooter locale={locale} footer={content.footer} />

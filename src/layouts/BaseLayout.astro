@@ -12,7 +12,7 @@ interface SeoProps {
 interface Props {
   locale: 'es' | 'en';
   seo: SeoProps;
-  pagePath: '/' | '/en/';
+  pagePath: string;
 }
 
 const { locale, seo, pagePath } = Astro.props;

@@ -21,15 +21,15 @@
     "tagline": "Ingenieria de software a la medida para operaciones reales",
     "ariaLabel": "Navegacion principal",
     "links": [
-      { "href": "#cargo", "label": "Producto estrella" },
-      { "href": "#services", "label": "Capacidades" },
-      { "href": "#process", "label": "Enfoque" },
-      { "href": "#benefits", "label": "Valor" },
-      { "href": "#tech", "label": "Especialidades" },
-      { "href": "#about", "label": "J2O" }
+      { "href": "/air-cargo/", "label": "Air Cargo" },
+      { "href": "/#services", "label": "Capacidades" },
+      { "href": "/#process", "label": "Enfoque" },
+      { "href": "/#benefits", "label": "Valor" },
+      { "href": "/#tech", "label": "Especialidades" },
+      { "href": "/#about", "label": "J2O" }
     ],
     "cta": {
-      "href": "#contact",
+      "href": "/#contact",
       "label": "Hablar con J2O"
     }
   },
@@ -46,9 +46,9 @@
       "label": "Ver capacidades tecnicas"
     },
     "featuredProduct": {
-      "label": "Catalogo estrella:",
-      "text": "Conoce Cargo y su modelo end-to-end para trazabilidad aerea",
-      "href": "#cargo"
+      "label": "Air Cargo:",
+      "text": "Conoce Air Cargo y su modelo end-to-end para trazabilidad aerea",
+      "href": "/air-cargo/"
     },
     "trustBadge": "Ingenieria aplicada a operaciones, integracion y escalabilidad",
     "supportingText": "Nuestro valor diferencial no es solo construir una interfaz. Resolvemos procesos, conectamos sistemas y desarrollamos software que soporta escenarios operativos reales.",
@@ -68,15 +68,14 @@
     ]
   },
   "cargoProduct": {
-    "kicker": "Producto estrella",
-    "title": "Cargo: plataforma digital para trazabilidad aerea end-to-end",
-    "description": "Cargo centraliza eventos, integraciones y evidencia operativa para que cada actor del ecosistema logistico tenga visibilidad accionable en tiempo real.",
-    "tagline": "Catalogo principal J2O",
+    "kicker": "Air Cargo",
+    "title": "Plataforma digital para trazabilidad aerea end-to-end",
+    "description": "Air Cargo centraliza eventos, integraciones y evidencia operativa para que cada actor del ecosistema logistico tenga visibilidad accionable en tiempo real.",
     "heroTitle": "Digitaliza tu cadena de carga aerea desde bodega hasta rampa.",
-    "heroDescription": "Con Cargo pasas de procesos fragmentados en correo, Excel y WhatsApp a una operacion event-driven con control tower, versionamiento de envios y trazabilidad verificable.",
+    "heroDescription": "Con Air Cargo pasas de procesos fragmentados en correo, Excel y WhatsApp a una operacion event-driven con control tower, versionamiento de envios y trazabilidad verificable.",
     "primaryCta": {
-      "href": "mailto:comercial@j2osolutions.com?subject=Quiero%20conocer%20Cargo",
-      "label": "Solicitar demo de Cargo"
+      "href": "mailto:comercial@j2osolutions.com?subject=Quiero%20conocer%20Air%20Cargo",
+      "label": "Solicitar demo de Air Cargo"
     },
     "secondaryCta": {
       "href": "#contact",

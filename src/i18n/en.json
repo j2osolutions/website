@@ -21,15 +21,15 @@
     "tagline": "Custom software engineering for real-world operations",
     "ariaLabel": "Main navigation",
     "links": [
-      { "href": "#cargo", "label": "Flagship product" },
-      { "href": "#services", "label": "Capabilities" },
-      { "href": "#process", "label": "Approach" },
-      { "href": "#benefits", "label": "Value" },
-      { "href": "#tech", "label": "Specialties" },
-      { "href": "#about", "label": "J2O" }
+      { "href": "/en/air-cargo/", "label": "Flagship product" },
+      { "href": "/en/#services", "label": "Capabilities" },
+      { "href": "/en/#process", "label": "Approach" },
+      { "href": "/en/#benefits", "label": "Value" },
+      { "href": "/en/#tech", "label": "Specialties" },
+      { "href": "/en/#about", "label": "J2O" }
     ],
     "cta": {
-      "href": "#contact",
+      "href": "/en/#contact",
       "label": "Talk to J2O"
     }
   },
@@ -47,8 +47,8 @@
     },
     "featuredProduct": {
       "label": "Flagship catalog:",
-      "text": "Discover Cargo and its end-to-end air traceability model",
-      "href": "#cargo"
+      "text": "Discover Air Cargo and its end-to-end air traceability model",
+      "href": "/en/air-cargo/"
     },
     "trustBadge": "Engineering applied to operations, integration and scale",
     "supportingText": "Our value is not limited to building interfaces. We solve processes, connect systems and deliver software that supports real operational scenarios.",
@@ -69,14 +69,14 @@
   },
   "cargoProduct": {
     "kicker": "Flagship product",
-    "title": "Cargo: digital platform for end-to-end air cargo traceability",
-    "description": "Cargo centralizes events, integrations and operational evidence so every logistics stakeholder gets actionable visibility in near real time.",
+    "title": "Air Cargo: digital platform for end-to-end air cargo traceability",
+    "description": "Air Cargo centralizes events, integrations and operational evidence so every logistics stakeholder gets actionable visibility in near real time.",
     "tagline": "J2O flagship offer",
     "heroTitle": "Digitize your air cargo chain from warehouse to ramp.",
-    "heroDescription": "Cargo transforms fragmented email, spreadsheet and chat workflows into an event-driven operation with a control tower, shipment versioning and verifiable traceability.",
+    "heroDescription": "Air Cargo transforms fragmented email, spreadsheet and chat workflows into an event-driven operation with a control tower, shipment versioning and verifiable traceability.",
     "primaryCta": {
-      "href": "mailto:comercial@j2osolutions.com?subject=I%20want%20to%20learn%20about%20Cargo",
-      "label": "Request a Cargo demo"
+      "href": "mailto:comercial@j2osolutions.com?subject=I%20want%20to%20learn%20about%20Air%20Cargo",
+      "label": "Request an Air Cargo demo"
     },
     "secondaryCta": {
       "href": "#contact",

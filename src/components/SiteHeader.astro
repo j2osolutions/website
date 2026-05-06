@@ -7,17 +7,23 @@ interface Props {
 }
 
 const { locale, nav } = Astro.props;
-const languageHref = locale === 'es' ? `${import.meta.env.BASE_URL}en/` : import.meta.env.BASE_URL;
+const isCargoPage = Astro.url.pathname.includes('/air-cargo');
+const languageHref = locale === 'es'
+  ? isCargoPage
+    ? `${import.meta.env.BASE_URL}en/air-cargo/`
+    : `${import.meta.env.BASE_URL}en/`
+  : isCargoPage
+    ? `${import.meta.env.BASE_URL}air-cargo/`
+    : import.meta.env.BASE_URL;
 const languageLabel = locale === 'es' ? 'EN' : 'ES';
+const homeHref = locale === 'es' ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}en/`;
 ---
 
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="#top" aria-label="J2O Solutions">
+    <a class="brand" href={homeHref} aria-label="J2O Solutions">
       <img src={`${import.meta.env.BASE_URL}J2O.png`} alt="J2O Solutions" width="96" height="96" />
       <span class="brand-copy">
-        <strong>J2O Solutions</strong>
-        <span>{nav.tagline}</span>
       </span>
     </a>
 
