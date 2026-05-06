@@ -481,6 +481,7 @@ main {
 
 .cargo-product {
   position: relative;
+  padding-top: clamp(1.25rem, 2.6vw, 2.2rem);
 }
 
 .cargo-hero {
