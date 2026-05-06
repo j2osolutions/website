@@ -72,7 +72,7 @@
     "title": "Plataforma digital para trazabilidad aerea end-to-end",
     "description": "Air Cargo centraliza eventos, integraciones y evidencia operativa para que cada actor del ecosistema logistico tenga visibilidad accionable en tiempo real.",
     "heroTitle": "Digitaliza tu cadena de carga aerea desde bodega hasta rampa.",
-    "heroDescription": "Con Air Cargo pasas de procesos fragmentados en correo, Excel y WhatsApp a una operacion event-driven con control tower, versionamiento de envios y trazabilidad verificable. Obtienes una linea de tiempo unica por shipment, alertas de excepcion en puntos criticos y evidencia operativa para auditoria y toma de decisiones.",
+    "heroDescription": "Con Air Cargo pasas de procesos fragmentados en correo, Excel y WhatsApp a una operacion event-driven con control tower, versionamiento de envios y trazabilidad verificable. Obtienes una linea de tiempo unica por shipment, alertas de excepcion en puntos criticos y evidencia operativa para auditoria y toma de decisiones. Desde pre-carriage y recepcion en terminal hasta build de ULD y cargue en rampa, cada handoff queda registrado con hitos estandarizados, ETA actualizado y trazas de incidencia para mejorar SLA, compliance y coordinacion entre shipper, forwarder, terminal y aerolinea.",
     "primaryCta": {
       "href": "mailto:comercial@j2osolutions.com?subject=Quiero%20conocer%20Air%20Cargo",
       "label": "Solicitar demo de Air Cargo"
