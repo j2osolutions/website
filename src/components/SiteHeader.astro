@@ -59,3 +59,18 @@ const homeHref = locale === 'es' ? import.meta.env.BASE_URL : `${import.meta.env
     </div>
   </div>
 </header>
+
+<script>
+  const mobileMenus = document.querySelectorAll('.mobile-menu');
+
+  for (const menu of mobileMenus) {
+    if (!(menu instanceof HTMLDetailsElement)) continue;
+
+    const links = menu.querySelectorAll('.mobile-menu-panel a');
+    for (const link of links) {
+      link.addEventListener('click', () => {
+        menu.open = false;
+      });
+    }
+  }
+</script>

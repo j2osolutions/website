@@ -233,8 +233,8 @@
     "description": "Respuestas directas para facilitar una primera conversacion.",
     "items": [
       {
-        "question": "¿El foco de J2O es marketing web o desarrollo a medida?",
-        "answer": "Nuestro foco principal es el desarrollo a medida: aplicaciones web y mobile, APIs, integraciones, soluciones RFID y logisticas, y sistemas geoespaciales. Sitios estaticos y landing pages tambien forman parte de nuestras capacidades, pero no son el centro de nuestra propuesta."
+        "question": "¿El foco de J2O es desarrollo a medida o marketing web?",
+        "answer": "Nuestro foco principal es el desarrollo a lamedida: aplicaciones web y mobile, APIs, integraciones, soluciones RFID y logisticas, y sistemas geoespaciales. Sitios estaticos y landing pages tambien forman parte de nuestras capacidades, pero no son el centro de nuestra propuesta."
       },
       {
         "question": "¿Podeis integrar equipos Zebra, impresoras o procesos con etiquetas ZPL?",
@@ -252,7 +252,7 @@
   },
   "cta": {
     "kicker": "Siguiente paso",
-    "title": "Si necesitas una solucion tecnica a medida, podemos ayudarte a diseñarla, integrarla y ponerla en operacion.",
+    "title": "Si necesitas una solucion tecnica a la medida, podemos ayudarte a diseñarla, integrarla y ponerla en marcha.",
     "description": "Trabajamos proyectos donde software, procesos, dispositivos e integraciones deben convivir con orden tecnico y orientacion a negocio.",
     "primaryCta": {
       "href": "#contact",
@@ -265,8 +265,8 @@
   },
   "contact": {
     "kicker": "Contacto",
-    "title": "Si necesitas una solucion tecnica a medida, hablemos.",
-    "description": "Si estas evaluando una aplicacion a medida, una API, una solucion mobile, integracion con dispositivos o una plataforma geoespacial, podemos ayudarte a definir el siguiente paso con criterio tecnico.",
+    "title": "Si necesitas una solucion tecnica a la medida, hablemos.",
+    "description": "Si estas evaluando una aplicacion a la medida, una API, una solucion mobile, integracion con dispositivos o una plataforma geoespacial, podemos ayudarte a definir el siguiente paso con criterio tecnico.",
     "primaryCtaLabel": "Iniciar conversacion",
     "emailLabel": "Correo",
     "email": "comercial@j2osolutions.com",
