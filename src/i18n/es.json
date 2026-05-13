@@ -106,6 +106,9 @@
       "description": "Un vistazo a los modulos principales: control tower, tracking de vuelo en vivo y creacion guiada de envios.",
       "prevLabel": "Ver pantalla anterior",
       "nextLabel": "Ver siguiente pantalla",
+      "zoomOpen": "Ampliar captura",
+      "zoomClose": "Cerrar vista ampliada",
+      "zoomDialogLabel": "Captura de Air Cargo ampliada",
       "items": [
         {
           "title": "Control Tower",

@@ -106,6 +106,9 @@
       "description": "A glimpse of the main modules: control tower, live flight tracking, and guided shipment creation.",
       "prevLabel": "Show previous screen",
       "nextLabel": "Show next screen",
+      "zoomOpen": "Expand screenshot",
+      "zoomClose": "Close enlarged view",
+      "zoomDialogLabel": "Enlarged Air Cargo screenshot",
       "items": [
         {
           "title": "Control Tower",
