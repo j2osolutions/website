@@ -99,7 +99,34 @@
       "Scale air exports without losing operational control.",
       "Orchestrate multiple actors without manual follow-up.",
       "Build a modern traceability foundation ready to grow."
-    ]
+    ],
+    "screens": {
+      "kicker": "Product tour",
+      "title": "See Air Cargo in action",
+      "description": "A glimpse of the main modules: control tower, live flight tracking, and guided shipment creation.",
+      "prevLabel": "Show previous screen",
+      "nextLabel": "Show next screen",
+      "items": [
+        {
+          "title": "Control Tower",
+          "description": "Monitor every shipment from a single view with KPIs, live alerts, today's flights, and a per-shipment event feed.",
+          "image": "air-cargo/control-tower.jpeg",
+          "alt": "Air Cargo Control Tower dashboard showing active shipments, alerts, and today's flights"
+        },
+        {
+          "title": "Flight Tracker",
+          "description": "Real-time flight tracking with the MIA to BOG route, ETA, recent milestones, and FlightRadar24 integration.",
+          "image": "air-cargo/flight-tracker.jpeg",
+          "alt": "Flight Tracker modal showing flight LA505 from MIA to BOG with recent events"
+        },
+        {
+          "title": "New shipment",
+          "description": "Step-by-step wizard to register shipments with route, cargo, parties, containers, and a final summary.",
+          "image": "air-cargo/new-shipment.jpeg",
+          "alt": "New shipment modal with guided steps: route, cargo, parties, containers, and summary"
+        }
+      ]
+    }
   },
   "services": {
     "kicker": "Capabilities",

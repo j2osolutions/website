@@ -53,8 +53,11 @@ const homeHref = locale === 'es' ? import.meta.env.BASE_URL : `${import.meta.env
         <span class="language-flag" aria-hidden="true">{languageFlag}</span>
       </a>
       <a class="button button-small button-primary header-cta" href={nav.cta.href} aria-label={nav.cta.label}>
-        <span class="header-cta-text">{nav.cta.label}</span>
-        <span class="header-cta-icon" aria-hidden="true">💬</span>
+        <span class="header-cta-icon" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+          </svg>
+        </span>
       </a>
     </div>
   </div>

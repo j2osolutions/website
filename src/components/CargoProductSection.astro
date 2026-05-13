@@ -1,5 +1,6 @@
 ---
 import type { SiteContent } from '../lib/content';
+import CargoScreensCarousel from './CargoScreensCarousel.astro';
 import DotLottiePlayer from './DotLottiePlayer.astro';
 
 interface Props {
@@ -44,6 +45,15 @@ const { cargoProduct } = Astro.props;
         ))}
       </div>
     </article>
+
+    <div class="cargo-screens-section">
+      <div class="section-heading">
+        <span class="eyebrow">{cargoProduct.screens.kicker}</span>
+        <h3>{cargoProduct.screens.title}</h3>
+        <p>{cargoProduct.screens.description}</p>
+      </div>
+      <CargoScreensCarousel screens={cargoProduct.screens} />
+    </div>
 
     <div class="cargo-grid">
       <article class="card">

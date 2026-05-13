@@ -1,0 +1,171 @@
+---
+import type { SiteContent } from '../lib/content';
+
+interface Props {
+  screens: SiteContent['cargoProduct']['screens'];
+}
+
+const { screens } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+const totalLabel = String(screens.items.length).padStart(2, '0');
+---
+
+<div class="cargo-screens" data-cargo-screens>
+  <div class="cargo-screens-stage">
+    <button
+      type="button"
+      class="cargo-screens-nav cargo-screens-nav-prev"
+      data-cargo-screens-prev
+      aria-label={screens.prevLabel}
+    >
+      <span aria-hidden="true">&#8592;</span>
+    </button>
+
+    <div class="cargo-screens-viewport" data-cargo-screens-viewport>
+      <ul class="cargo-screens-track" role="list">
+        {screens.items.map((item, index) => (
+          <li
+            class="cargo-screens-slide"
+            data-cargo-screens-slide
+            data-index={index}
+            aria-roledescription="slide"
+            aria-label={`${String(index + 1).padStart(2, '0')} / ${totalLabel} — ${item.title}`}
+          >
+            <figure class="cargo-screens-figure">
+              <img
+                src={`${baseUrl}${item.image}`}
+                alt={item.alt}
+                loading={index === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+              />
+            </figure>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <button
+      type="button"
+      class="cargo-screens-nav cargo-screens-nav-next"
+      data-cargo-screens-next
+      aria-label={screens.nextLabel}
+    >
+      <span aria-hidden="true">&#8594;</span>
+    </button>
+  </div>
+
+  <div class="cargo-screens-info">
+    <div class="cargo-screens-captions" data-cargo-screens-captions>
+      {screens.items.map((item, index) => (
+        <div
+          class:list={["cargo-screens-caption", { "is-active": index === 0 }]}
+          data-cargo-screens-caption
+          data-index={index}
+          aria-hidden={index === 0 ? 'false' : 'true'}
+        >
+          <span class="cargo-screens-counter">{String(index + 1).padStart(2, '0')} / {totalLabel}</span>
+          <h4>{item.title}</h4>
+          <p>{item.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="cargo-screens-dots" role="tablist" aria-label="Air Cargo screens">
+      {screens.items.map((item, index) => (
+        <button
+          type="button"
+          class:list={["cargo-screens-dot", { "is-active": index === 0 }]}
+          data-cargo-screens-dot
+          data-index={index}
+          role="tab"
+          aria-selected={index === 0 ? 'true' : 'false'}
+          aria-label={item.title}
+        ></button>
+      ))}
+    </div>
+  </div>
+</div>
+
+<script>
+  const carousels = document.querySelectorAll<HTMLElement>('[data-cargo-screens]');
+
+  for (const carousel of carousels) {
+    const viewport = carousel.querySelector<HTMLElement>('[data-cargo-screens-viewport]');
+    const slides = Array.from(carousel.querySelectorAll<HTMLElement>('[data-cargo-screens-slide]'));
+    const dots = Array.from(carousel.querySelectorAll<HTMLButtonElement>('[data-cargo-screens-dot]'));
+    const captions = Array.from(carousel.querySelectorAll<HTMLElement>('[data-cargo-screens-caption]'));
+    const prevButton = carousel.querySelector<HTMLButtonElement>('[data-cargo-screens-prev]');
+    const nextButton = carousel.querySelector<HTMLButtonElement>('[data-cargo-screens-next]');
+
+    if (!viewport || slides.length === 0) continue;
+
+    let activeIndex = 0;
+
+    const setActive = (index: number) => {
+      const clamped = Math.max(0, Math.min(slides.length - 1, index));
+      activeIndex = clamped;
+
+      for (const dot of dots) {
+        const dotIndex = Number(dot.dataset.index ?? '-1');
+        const isActive = dotIndex === clamped;
+        dot.classList.toggle('is-active', isActive);
+        dot.setAttribute('aria-selected', isActive ? 'true' : 'false');
+      }
+
+      for (const caption of captions) {
+        const captionIndex = Number(caption.dataset.index ?? '-1');
+        const isActive = captionIndex === clamped;
+        caption.classList.toggle('is-active', isActive);
+        caption.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+      }
+    };
+
+    const goTo = (index: number, behavior: ScrollBehavior = 'smooth') => {
+      const target = slides[Math.max(0, Math.min(slides.length - 1, index))];
+      if (!target) return;
+      viewport.scrollTo({ left: target.offsetLeft, behavior });
+      setActive(index);
+    };
+
+    for (const dot of dots) {
+      dot.addEventListener('click', () => {
+        const index = Number(dot.dataset.index ?? '0');
+        goTo(index);
+      });
+    }
+
+    prevButton?.addEventListener('click', () => goTo(activeIndex - 1));
+    nextButton?.addEventListener('click', () => goTo(activeIndex + 1));
+
+    let scrollTimer: number | undefined;
+    viewport.addEventListener('scroll', () => {
+      if (scrollTimer) window.clearTimeout(scrollTimer);
+      scrollTimer = window.setTimeout(() => {
+        const center = viewport.scrollLeft + viewport.clientWidth / 2;
+        let closestIndex = 0;
+        let closestDistance = Infinity;
+        slides.forEach((slide, index) => {
+          const slideCenter = slide.offsetLeft + slide.clientWidth / 2;
+          const distance = Math.abs(slideCenter - center);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            closestIndex = index;
+          }
+        });
+        if (closestIndex !== activeIndex) setActive(closestIndex);
+      }, 80);
+    });
+
+    carousel.addEventListener('keydown', (event) => {
+      if (event.key === 'ArrowRight') {
+        event.preventDefault();
+        goTo(activeIndex + 1);
+      } else if (event.key === 'ArrowLeft') {
+        event.preventDefault();
+        goTo(activeIndex - 1);
+      }
+    });
+
+    setActive(0);
+  }
+</script>

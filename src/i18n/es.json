@@ -99,7 +99,34 @@
       "Escalar exportaciones aereas sin perder control operativo.",
       "Orquestar múltiples actores sin depender de seguimiento manual.",
       "Construir una base moderna de trazabilidad lista para crecer."
-    ]
+    ],
+    "screens": {
+      "kicker": "Recorrido por la plataforma",
+      "title": "Asi se ve Air Cargo en operacion",
+      "description": "Un vistazo a los modulos principales: control tower, tracking de vuelo en vivo y creacion guiada de envios.",
+      "prevLabel": "Ver pantalla anterior",
+      "nextLabel": "Ver siguiente pantalla",
+      "items": [
+        {
+          "title": "Control Tower",
+          "description": "Monitorea todos los envios desde una unica vista con KPIs, alertas en vivo, vuelos del dia y feed de eventos por shipment.",
+          "image": "air-cargo/control-tower.jpeg",
+          "alt": "Dashboard de Control Tower de Air Cargo mostrando shipments activos, alertas y vuelos del dia"
+        },
+        {
+          "title": "Flight Tracker",
+          "description": "Tracking de vuelo en tiempo real con ruta MIA - BOG, ETA, hitos recientes e integracion con FlightRadar24.",
+          "image": "air-cargo/flight-tracker.jpeg",
+          "alt": "Modal de Flight Tracker mostrando el vuelo LA505 MIA a BOG con eventos recientes"
+        },
+        {
+          "title": "Nuevo envio",
+          "description": "Asistente paso a paso para registrar envios con ruta, cargo, partes, contenedores y resumen final.",
+          "image": "air-cargo/new-shipment.jpeg",
+          "alt": "Modal de creacion de nuevo shipment con pasos guiados: ruta, cargo, partes, contenedores y resumen"
+        }
+      ]
+    }
   },
   "services": {
     "kicker": "Capacidades",
